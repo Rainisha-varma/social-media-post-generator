@@ -23,7 +23,7 @@ The architecture features a minimalist Node.js backend that acts as a secure pro
 * **Instant Copy:** Quickly copy the generated post to your clipboard with a dedicated button.
 * **Live Demo:** Explore the application directly via the provided Railway deployment.
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 **Frontend:**
 * HTML5
