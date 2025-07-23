@@ -1,0 +1,229 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fcefe4;
+    margin: 0;
+    color: #4a4a4a;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+h1, h2 {
+    color: #d9534f;
+    margin-bottom: 25px;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 52px;
+    line-height: 1.1;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #6c757d;
+    font-size: 15px;
+}
+
+textarea {
+    width: calc(100% - 24px); 
+    padding: 12px;
+    border: 1px solid #ffccb3;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    min-height: 100px; 
+    resize: vertical; 
+}
+
+textarea:focus {
+    border-color: #d9534f;
+    box-shadow: 0 0 0 3px rgba(217, 83, 79, 0.2);
+    outline: none;
+}
+
+/* Styling for select dropdowns */
+select {
+    width: calc(100% - 20px); /* Account for padding */
+    padding: 10px;
+    border: 1px solid #ffccb3;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    background-color: #ffffff;
+    appearance: none; /* Remove default browser styling */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23d9534f" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>'); /* Custom arrow */
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 20px;
+    cursor: pointer;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+select:focus {
+    border-color: #d9534f;
+    box-shadow: 0 0 0 3px rgba(217, 83, 79, 0.2);
+    outline: none;
+}
+
+
+button {
+    background-color: #d9534f; 
+    color: white;
+    padding: 14px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 17px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #c9302c; 
+    transform: translateY(-2px);
+}
+
+.output-group {
+    margin-top: 40px;
+    border-top: 1px solid #f0f0f0;
+    padding-top: 30px;
+}
+
+.tagline {
+    padding: 8px 15px;
+    background-image: linear-gradient(to right, #ffe0b3, #ffc266);
+    color: #a0522d;
+    font-size: 15px;
+    border-radius: 20px;
+    height:fit-content;
+    width: fit-content;
+    margin: 0 auto 25px;
+    font-weight: 500;
+}
+
+.description {
+    color: #888;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+#generatedPost {
+    background-color: #fffaf0;
+    padding: 20px;
+    border-radius: 8px;
+    min-height: 100px;
+    text-align: left;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    color: #555;
+    font-size: 16px;
+    border: 1px solid #ffe0b3;
+}
+
+/* Styles for Toggle Switches */
+.toggle-group {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Space between toggles */
+    margin: 25px 0; /* Margin for the group */
+}
+
+.toggle-switch {
+    position: relative;
+    display: flex; 
+    align-items: center; /* Vertically center items */
+    gap: 10px; /* Space between the slider and the text */
+    font-weight: 600;
+    color: #6c757d;
+    font-size: 15px;
+    cursor: pointer;
+    width: auto; /* Allow width to adjust to content */
+}
+
+/* Hide default HTML checkbox */
+.toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider - adjusted to be the visual toggle part */
+.slider {
+    position: relative; 
+    display: inline-block; /* Keep as inline-block for its own dimensions */
+    width: 60px;
+    height: 34px;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #d9534f;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #d9534f;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* Copy button color adjustment */
+#copyBtn {
+    background-color: #d9534f; /* Same as Generate Post button */
+    margin-top: 15px; /* Adjust margin if needed */
+}
+
+#copyBtn:hover {
+    background-color: #c9302c; /* Same hover as Generate Post button */
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Social Media Post Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <p class="tagline">Social Media Made Easy with AI</p>
+        <h1>Free instant social media posts</h1>
+        <p class="description">Keep your content fresh, your presence consistent, and your workflow efficient with our free AI-powered post generator.</p>
+
+        <div class="input-group">
+            <label for="topic">What's your post about?</label>
+            <textarea id="topic" placeholder="Enter your post topic or description..."></textarea> </div>
+
+        <div class="input-group">
+            <label for="tone">Desired Tone</label>
+            <select id="tone">
+                <option value="">Any</option>
+                <option value="inspiring">Inspiring</option>
+                <option value="funny">Funny</option>
+                <option value="professional">Professional</option>
+                <option value="informative">Informative</option>
+                <option value="casual">Casual</option>
+                <option value="enthusiastic">Enthusiastic</option>
+                <option value="educational">Educational</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="platform">Social Media Platform</label>
+            <select id="platform">
+                <option value="">Any</option>
+                <option value="Instagram">Instagram</option>
+                <option value="Twitter">X (Twitter)</option>
+                <option value="LinkedIn">LinkedIn</option>
+                <option value="Facebook">Facebook</option>
+            </select>
+        </div>
+
+        <div class="toggle-group">
+            <label class="toggle-switch">
+                <input type="checkbox" id="addHashtags" checked>
+                <span class="slider round"></span>
+                Add Hashtags?
+            </label>
+            <label class="toggle-switch">
+                <input type="checkbox" id="addEmojis" checked>
+                <span class="slider round"></span>
+                Add Emojis?
+            </label>
+        </div>
+
+        <button id="generateBtn">Generate Post</button>
+
+        <div class="output-group">
+            <h2>Generated Post:</h2>
+            <p id="generatedPost">Your AI-generated post will appear here.</p>
+            <button id="copyBtn" style="display: none;">Copy</button> </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
