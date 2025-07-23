@@ -1,0 +1,11 @@
+# Node.js dependencies
+node_modules/
+
+# Environment variables
+.env
+
+# Optional: Logs, build artifacts, etc.
+# logs/
+# *.log
+# npm-debug.log*
+# .DS_Store # macOS specific
