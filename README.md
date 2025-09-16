@@ -39,4 +39,4 @@ The architecture features a minimalist Node.js backend that acts as a secure pro
 * **Google Gemini API (`@google/genai` SDK)**
 
 **Deployment:**
-* Railway
+* Render
