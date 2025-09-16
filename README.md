@@ -1,6 +1,6 @@
 # AI Social Media Post Generator
 
-**Live Demo:** [https://social-media-post-generator-production-eda1.up.railway.app/](https://social-media-post-generator-production-eda1.up.railway.app/)
+**Live Demo:** [https://social-media-post-generator-h0a4.onrender.com](https://social-media-post-generator-h0a4.onrender.com)
 
 ---
 
@@ -21,7 +21,7 @@ The architecture features a minimalist Node.js backend that acts as a secure pro
 * **Minimalist & Secure Backend:** A lean Node.js Express server handles API requests and securely interfaces with the Gemini API.
 * **Intuitive Static Frontend:** A clean and responsive user interface built with plain HTML, CSS, and JavaScript for a smooth user experience.
 * **Instant Copy:** Quickly copy the generated post to your clipboard with a dedicated button.
-* **Live Demo:** Explore the application directly via the provided Railway deployment.
+* **Live Demo:** Explore the application directly via the provided Render deployment.
 
 ##  Technologies Used
 
